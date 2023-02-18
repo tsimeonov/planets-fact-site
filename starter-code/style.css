@@ -1,0 +1,325 @@
+/* RESET CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --white: #fff;
+  --dark-blue: #070724;
+  --midnight-blue-gray: #38384f;
+  --lavender-gray: #838391;
+  --turquoise-blue: #419ebb;
+  --pumpkin-orange: #eda249;
+  --deep-violet: #6f2ed6;
+  --scarlet-red: #d14c32;
+  --crimson-red: #d83a34;
+  --burnt-orange: #cd5120;
+  --teal-green: #1ec2a4;
+  --deep-blue: #2d68f0;
+}
+
+/* Change the default 16px font size to 10xp */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #070724;
+  background-image: url(./assets/background-stars.svg);
+  background-size: cover;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  outline: 1px solid red;
+}
+
+/*************** DESKTOP VIEW ***************/
+
+/* DESKTOP HEADER */
+header {
+  max-width: 137rem;
+  margin: 0 auto;
+  height: 8.5rem;
+  border-bottom: 1px solid var(--lavender-gray);
+  /* opacity: 0.2; */
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+}
+
+.navbar > p {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -1.05px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.nav-list {
+  display: flex;
+  padding: 0 0 0 12.5rem;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 4rem 0 4rem 0;
+}
+
+.nav-list li a {
+  font-family: "League Spartan", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 2.5rem;
+  margin-left: 3.3rem;
+  letter-spacing: 0.1rem;
+  color: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-list li a:hover {
+  cursor: pointer;
+  box-shadow: inset 0 -0.3rem 0 0 #fff;
+  padding-bottom: 4rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-list li a span {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+}
+
+.hamburger,
+.mobile-menu {
+  display: none;
+}
+
+main {
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  /* background-size: 0 100vh; */
+}
+
+/*************** MOBILE VIEW ***************/
+
+@media screen and (max-width: 375px) {
+  /* MOBILE MENU & SIDEBAR */
+
+  .navbar {
+    margin: 2.4rem 2.4rem 0 2.4rem;
+    width: 90%;
+  }
+
+  .hamburger,
+  .mobile-menu {
+    display: block;
+    z-index: 2;
+  }
+
+  .mobile-menu {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(1.777rem);
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    width: 83%;
+    height: 100vh;
+    padding: 14.4rem 3rem 0 3rem;
+    box-shadow: 2px 5px 25px rgb(0, 0, 0 /15%);
+    transition: all 0.2s ease-in-out;
+    z-index: 10;
+  }
+
+  .mobile-menu.open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+
+  .sidebar-list li {
+    list-style: none;
+    margin-bottom: 3.2rem;
+    cursor: pointer;
+  }
+
+  .sidebar-list li span {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+  }
+
+  .sidebar-list li a {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.27rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    height: 2vh;
+  }
+
+  .sidebar-list li a:hover {
+    cursor: pointer;
+    box-shadow: inset 0 -0.3rem 0 0 #fff;
+    transition: all 0.2s ease-in-out;
+    padding-bottom: 0.5rem;
+  }
+
+  /* MOBILE HEADER */
+  .nav-list {
+    display: none;
+  }
+}
