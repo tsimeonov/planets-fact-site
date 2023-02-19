@@ -150,21 +150,12 @@ body {
   background-size: cover;
 }
 
-.square {
-  width: 100px;
-  height: 100px;
-  outline: 1px solid red;
-}
-
 /*************** DESKTOP VIEW ***************/
 
 /* DESKTOP HEADER */
 header {
-  max-width: 137rem;
+  max-width: 125rem;
   margin: 0 auto;
-  height: 8.5rem;
-  border-bottom: 1px solid var(--lavender-gray);
-  /* opacity: 0.2; */
   position: relative;
 }
 
@@ -172,8 +163,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
   z-index: 2;
+  padding: 2.2rem 3.2rem 0 3.2rem;
+  border-bottom: 1px solid var(--lavender-gray);
   position: absolute;
 }
 
@@ -212,20 +205,47 @@ header {
   transition: all 0.2s ease-in-out;
 }
 
-.nav-list li a:hover {
+/* HOVER STATES */
+.mercury:hover,
+.venus:hover,
+.earth:hover,
+.mars:hover,
+.jupiter:hover,
+.saturn:hover,
+.uranus:hover,
+.neptune:hover {
   cursor: pointer;
-  box-shadow: inset 0 -0.3rem 0 0 #fff;
-  padding-bottom: 4rem;
+  box-shadow: inset 0 0.3rem 0 0 var(--turquoise-blue);
+  padding-top: 1rem;
   transition: all 0.2s ease-in-out;
 }
 
-.nav-list li a span {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 1.9rem;
-  letter-spacing: 0.2rem;
-  font-weight: 900;
+.venus:hover {
+  box-shadow: inset 0 0.3rem 0 0 var(--pumpkin-orange);
+}
+
+.earth:hover {
+  box-shadow: inset 0 0.3rem 0 0 var(--deep-violet);
+}
+
+.mars:hover {
+  box-shadow: inset 0 0.3rem 0 0 var(--scarlet-red);
+}
+
+.jupiter:hover {
+  box-shadow: inset 0 0.3rem 0 0 var(--crimson-red);
+}
+
+.saturn:hover {
+  box-shadow: inset 0 0.3rem 0 0 var(--burnt-orange);
+}
+
+.uranus:hover {
+  box-shadow: inset 0 0.3rem 0 0 var(--teal-green);
+}
+
+.neptune:hover {
+  box-shadow: inset 0 0.3rem 0 0 var(--deep-blue);
 }
 
 .hamburger,
@@ -239,14 +259,29 @@ main {
   /* background-size: 0 100vh; */
 }
 
+/*************** TABLET VIEW ***************/
+@media screen and (max-width: 768px) {
+  /* TABLET HEADER */
+  .navbar {
+    flex-direction: column;
+    padding-top: 3.2rem;
+    width: 90%;
+  }
+
+  .nav-list {
+    padding: 0;
+  }
+}
+
 /*************** MOBILE VIEW ***************/
 
 @media screen and (max-width: 375px) {
   /* MOBILE MENU & SIDEBAR */
-
   .navbar {
-    margin: 2.4rem 2.4rem 0 2.4rem;
+    margin: 0;
     width: 90%;
+    padding: 1.6rem 2.4rem 1.6rem 2.4rem;
+    flex-direction: row;
   }
 
   .hamburger,
@@ -256,14 +291,13 @@ main {
   }
 
   .mobile-menu {
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(1.777rem);
+    background-color: var(--dark-blue);
     position: fixed;
     top: 0;
     right: 0;
     transform: translateX(100%);
     opacity: 0;
-    width: 83%;
+    width: 84%;
     height: 100vh;
     padding: 14.4rem 3rem 0 3rem;
     box-shadow: 2px 5px 25px rgb(0, 0, 0 /15%);
@@ -287,35 +321,67 @@ main {
     list-style: none;
     margin-bottom: 3.2rem;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--lavender-gray);
   }
 
-  .sidebar-list li span {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
-    letter-spacing: 0.2rem;
-    font-weight: 900;
+  .mercury-sidebar,
+  .venus-sidebar,
+  .earth-sidebar,
+  .mars-sidebar,
+  .jupiter-sidebar,
+  .saturn-sidebar,
+  .uranus-sidebar,
+  .neptune-sidebar {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--turquoise-blue);
+  }
+
+  .venus-sidebar {
+    background-color: var(--pumpkin-orange);
+  }
+
+  .earth-sidebar {
+    background-color: var(--deep-blue);
+  }
+
+  .mars-sidebar {
+    background-color: var(--scarlet-red);
+  }
+
+  .jupiter-sidebar {
+    background-color: var(--crimson-red);
+  }
+
+  .saturn-sidebar {
+    background-color: var(--burnt-orange);
+  }
+
+  .uranus-sidebar {
+    background-color: var(--teal-green);
+  }
+
+  .neptune-sidebar {
+    background-color: var(--deep-blue);
   }
 
   .sidebar-list li a {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
-    letter-spacing: 0.27rem;
-    color: #fff;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
     text-transform: uppercase;
+    letter-spacing: 0.13rem;
     text-decoration: none;
+    color: var(--white);
     transition: all 0.2s ease-in-out;
     height: 2vh;
-  }
-
-  .sidebar-list li a:hover {
-    cursor: pointer;
-    box-shadow: inset 0 -0.3rem 0 0 #fff;
-    transition: all 0.2s ease-in-out;
-    padding-bottom: 0.5rem;
+    padding-left: 4.5rem;
   }
 
   /* MOBILE HEADER */
