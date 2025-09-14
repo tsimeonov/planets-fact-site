@@ -1,5 +1,38 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		'header header header'
+		'image info info'
+		'extra-info extra-info extra-info';
+}
+
+.header {
+	grid-area: header;
+
+	outline: 1px solid red;
+}
+
+.image {
+	grid-area: image;
+	outline: 1px solid red;
+}
+
+.info {
+	grid-area: info;
+	outline: 1px solid red;
+}
+
+.extra-info {
+	grid-area: extra-info;
+	outline: 1px solid red;
 }
