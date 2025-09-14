@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-image: url(./assets/background-stars.svg);
+}
+
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -18,8 +22,16 @@
 
 .header {
 	grid-area: header;
-
 	outline: 1px solid red;
+	display: flex;
+	justify-content: space-between;
+	padding: 22px 32px;
+}
+
+.header_logo {
+	font-family: 'Antonio', sans-serif;
+	font-size: 28px;
+	text-transform: uppercase;
 }
 
 .image {
