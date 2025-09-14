@@ -34,6 +34,8 @@
 	font-size: 28px;
 	text-transform: uppercase;
 	color: white;
+	display: flex;
+	align-items: center;
 }
 
 .header_planets {
@@ -50,6 +52,34 @@
 	list-style-type: none;
 	color: white;
 	margin-left: 33px;
+	transition: box-shadow 0.3s ease-in;
+
+	/* Create a positioning context for the ::before element */
+	position: relative;
+}
+
+/* This is the line element */
+.header_planets a::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+
+	/* --- CONTROLS --- */
+	height: 5px; /* This is the THICKNESS of the line */
+	top: -10px; /* This is the DISTANCE above the text */
+	/* ---------------- */
+
+	background-color: green;
+
+	/* Hides the line initially */
+	opacity: 0;
+	transition: opacity 0.3s ease-in;
+}
+
+.header_planets a:hover::before {
+	/* Shows the line on hover */
+	opacity: 1;
 }
 
 .image {
