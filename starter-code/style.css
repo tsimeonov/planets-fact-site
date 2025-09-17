@@ -31,6 +31,16 @@ nav ul li {
 	margin-left: 1.5rem;
 }
 
+nav ul li a {
+	font-family: 'Spartan', sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	transition: box-shadow 0.3s ease-in;
+}
+
 /* .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
