@@ -4,7 +4,15 @@
 	box-sizing: border-box;
 }
 
-.container {
+nav {
+	padding: 5px 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+}
+
+/* .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -55,34 +63,34 @@
 	transition: box-shadow 0.3s ease-in;
 
 	/* Create a positioning context for the ::before element */
-	position: relative;
-}
+/* position: relative; */
+/* } */
 
 /* This is the line element */
-.header_planets a::before {
+/* .header_planets a::before {
 	content: '';
 	position: absolute;
 	left: 0;
-	width: 100%;
+	width: 100%; */
 
-	/* --- CONTROLS --- */
-	height: 5px; /* This is the THICKNESS of the line */
-	top: -10px; /* This is the DISTANCE above the text */
-	/* ---------------- */
+/* --- CONTROLS --- */
+/* height: 5px;  */
+/* top: -10px; */
+/* ---------------- */
 
-	background-color: green;
+/* background-color: green; */
 
-	/* Hides the line initially */
-	opacity: 0;
+/* Hides the line initially */
+/* opacity: 0;
 	transition: opacity 0.3s ease-in;
-}
+} */
 
-.header_planets a:hover::before {
-	/* Shows the line on hover */
-	opacity: 1;
-}
+/* .header_planets a:hover::before { */
+/* Shows the line on hover */
+/* opacity: 1;
+} */
 
-.image {
+/* .image {
 	grid-area: image;
 
 	outline: 1px solid green;
@@ -98,4 +106,4 @@
 	grid-area: extra-info;
 
 	outline: 1px solid blue;
-}
+} */
