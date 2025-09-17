@@ -42,8 +42,17 @@ nav ul li a {
 }
 
 .hamburger {
-	display: none;
+	/* display: none; */
 	cursor: pointer;
+}
+
+.hamburger .line {
+	width: 25px;
+	height: 1px;
+	background-color: black;
+	display: block;
+	margin: 7px auto;
+	transition: all 0.3s ease-in-out;
 }
 
 /* .container {
