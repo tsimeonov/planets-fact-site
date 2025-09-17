@@ -12,6 +12,16 @@ nav {
 	z-index: 1;
 }
 
+nav .logo {
+	font-family: 'Antonio', sans-serif;
+	font-size: 28px;
+	text-transform: uppercase;
+	color: black;
+	display: flex;
+	align-items: center;
+	outline: 1px solid red;
+}
+
 /* .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
