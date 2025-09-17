@@ -27,6 +27,10 @@ nav ul {
 	display: flex;
 }
 
+nav ul li {
+	margin-left: 1.5rem;
+}
+
 /* .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
