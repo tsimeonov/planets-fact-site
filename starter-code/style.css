@@ -41,6 +41,11 @@ nav ul li a {
 	transition: box-shadow 0.3s ease-in;
 }
 
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
+
 /* .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
