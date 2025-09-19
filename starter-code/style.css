@@ -117,7 +117,7 @@ nav ul li a:hover::before {
 .hamburger .line {
 	width: 25px;
 	height: 1px;
-	background-color: black;
+	background-color: white;
 	display: block;
 	margin: 7px auto;
 	transition: all 0.3s ease-in-out;
@@ -125,6 +125,7 @@ nav ul li a:hover::before {
 
 .hamburger-active {
 	transition: all 0.3s ease-in-out;
+	outline: 1px solid red;
 	transition-delay: 0.3s;
 	transform: rotate(45deg);
 }
