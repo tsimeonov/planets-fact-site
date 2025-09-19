@@ -103,6 +103,10 @@ nav ul li a {
 	list-style: none;
 }
 
+.menubar ul li {
+	margin-bottom: 32px;
+}
+
 /* .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
