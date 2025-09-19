@@ -65,6 +65,11 @@ nav ul li a {
 	width: 0px;
 }
 
+.hamburger-active .line:nth-child(1),
+.hamburger-active .line:nth-child(3) {
+	transition-delay: 0.3s;
+}
+
 /* .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
