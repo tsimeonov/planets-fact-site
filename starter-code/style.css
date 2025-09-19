@@ -44,6 +44,7 @@ nav ul li a {
 .hamburger {
 	display: none;
 	cursor: pointer;
+	z-index: 10;
 }
 
 .hamburger .line {
@@ -85,7 +86,7 @@ nav ul li a {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	width: 60%;
+	width: 100%;
 	height: 100vh;
 	padding: 20% 0;
 	background-color: rgba(255, 255, 255);
