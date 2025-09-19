@@ -61,6 +61,10 @@ nav ul li a {
 	transform: rotate(45deg);
 }
 
+.hamburger-active .line:nth-child(2) {
+	width: 0px;
+}
+
 /* .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
