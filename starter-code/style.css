@@ -78,9 +78,36 @@ nav ul li a {
 	font-size: 11px;
 	font-weight: bold;
 	text-decoration: none;
-	color: black;
-	text-transform: uppercase;
+	list-style-type: none;
+	color: white;
+	margin-left: 33px;
 	transition: box-shadow 0.3s ease-in;
+
+	/* Create a positioning context for the ::before element */
+	position: relative;
+}
+
+/* This is the line element */
+nav ul li a::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+
+	/* --- CONTROLS --- */
+	height: 5px;
+	top: -10px;
+
+	background-color: green;
+
+	/* Hides the line initially */
+	opacity: 0;
+	transition: opacity 0.3s ease-in;
+}
+
+nav ul li a:hover::before {
+	/* Shows the line on hover */
+	opacity: 1;
 }
 
 .hamburger {
