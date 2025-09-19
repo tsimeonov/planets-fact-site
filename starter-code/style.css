@@ -82,7 +82,7 @@ nav ul li a {
 .menubar {
 	position: absolute;
 	top: 0;
-	left: -60%;
+	left: -100%;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
