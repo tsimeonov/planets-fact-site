@@ -78,6 +78,21 @@ nav ul li a {
 	transform: translateY(-5px) rotate(90deg);
 }
 
+.menubar {
+	position: absolute;
+	top: 0;
+	/* left: -60%; */
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 60%;
+	height: 100vh;
+	padding: 20% 0;
+	background-color: rgba(255, 255, 255);
+	transition: all 0.5s ease-in;
+	z-index: 2;
+}
+
 /* .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
