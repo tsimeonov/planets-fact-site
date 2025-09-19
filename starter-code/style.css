@@ -74,6 +74,10 @@ nav ul li a {
 	transform: translateY(12px);
 }
 
+.hamburger-active .line:nth-child(3) {
+	transform: translateY(-5px) rotate(90deg);
+}
+
 /* .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
