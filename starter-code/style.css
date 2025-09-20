@@ -183,38 +183,38 @@ nav ul li a:hover::before {
 	border-bottom: none;
 }
 
-.menubar ul li span {
+.menubar ul li span:first-child {
 	border-radius: 50%;
 	width: 20px;
 	height: 20px;
 	background-color: #def4fc;
 }
 
-.menubar ul li:nth-child(2) span {
+.menubar ul li:nth-child(2) span:first-child {
 	background-color: #f7cc7f;
 }
 
-.menubar ul li:nth-child(3) span {
+.menubar ul li:nth-child(3) span:first-child {
 	background-color: #545bfe;
 }
 
-.menubar ul li:nth-child(4) span {
+.menubar ul li:nth-child(4) span:first-child {
 	background-color: #ff6a45;
 }
 
-.menubar ul li:nth-child(5) span {
+.menubar ul li:nth-child(5) span:first-child {
 	background-color: #ecad7a;
 }
 
-.menubar ul li:nth-child(6) span {
+.menubar ul li:nth-child(6) span:first-child {
 	background-color: #fccb6b;
 }
 
-.menubar ul li:nth-child(7) span {
+.menubar ul li:nth-child(7) span:first-child {
 	background-color: #65f0d5;
 }
 
-.menubar ul li:nth-child(8) span {
+.menubar ul li:nth-child(8) span:first-child {
 	background-color: #497efa;
 }
 
