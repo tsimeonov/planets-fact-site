@@ -179,6 +179,10 @@ nav ul li a:hover::before {
 	width: 90vw;
 }
 
+.menubar ul li:last-child {
+	border-bottom: none;
+}
+
 .menubar ul li span {
 	border-radius: 50%;
 	width: 20px;
