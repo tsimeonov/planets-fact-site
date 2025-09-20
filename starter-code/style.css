@@ -186,6 +186,34 @@ nav ul li a:hover::before {
 	background-color: #def4fc;
 }
 
+.menubar ul li:nth-child(2) span {
+	background-color: #f7cc7f;
+}
+
+.menubar ul li:nth-child(3) span {
+	background-color: #545bfe;
+}
+
+.menubar ul li:nth-child(4) span {
+	background-color: #ff6a45;
+}
+
+.menubar ul li:nth-child(5) span {
+	background-color: #ecad7a;
+}
+
+.menubar ul li:nth-child(6) span {
+	background-color: #fccb6b;
+}
+
+.menubar ul li:nth-child(7) span {
+	background-color: #65f0d5;
+}
+
+.menubar ul li:nth-child(8) span {
+	background-color: #497efa;
+}
+
 .menubar ul li a {
 	text-decoration: none;
 	font-family: 'Spartan', sans-serif;
