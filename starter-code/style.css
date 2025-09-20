@@ -7,7 +7,7 @@
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 0.1fr 1fr 1fr;
 	gap: 0px 0px;
 	grid-auto-flow: row;
 	grid-template-areas:
@@ -147,7 +147,7 @@ nav ul li a:hover::before {
 
 .menubar {
 	position: absolute;
-	top: 100%;
+	top: 110%;
 	left: -100%;
 	display: flex;
 	justify-content: center;
@@ -187,12 +187,8 @@ nav ul li a:hover::before {
 }
 
 @media screen and (max-width: 790px) {
-	/* .header {
-		border-bottom: 5px solid white;
-	} */
-
-	.header-border-active {
-		border-bottom: 5px solid white;
+	.menubar.active {
+		border-top: 1px solid white;
 	}
 
 	.menubar {
