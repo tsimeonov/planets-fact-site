@@ -23,26 +23,27 @@
 
 .header {
 	grid-area: header;
-	outline: 2px solid red;
+	/* outline: 2px solid red; */
 	padding: 22px 32px;
+	border-bottom: none;
 }
 
 .image {
 	grid-area: image;
 
-	outline: 1px solid green;
+	/* outline: 1px solid green; */
 }
 
 .info {
 	grid-area: info;
 
-	outline: 1px solid yellow;
+	/* outline: 1px solid yellow; */
 }
 
 .extra-info {
 	grid-area: extra-info;
 
-	outline: 1px solid blue;
+	/* outline: 1px solid blue; */
 }
 
 nav {
@@ -184,6 +185,14 @@ nav ul li a:hover::before {
 }
 
 @media screen and (max-width: 790px) {
+	/* .header {
+		border-bottom: 5px solid white;
+	} */
+
+	.menubar {
+		justify-content: flex-start;
+	}
+
 	.hamburger {
 		display: block;
 	}
