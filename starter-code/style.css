@@ -19,6 +19,8 @@
 	background-color: #070724;
 	background-size: cover;
 	background-repeat: no-repeat;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .header {
