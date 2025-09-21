@@ -66,7 +66,7 @@
 	padding-top: 23px;
 }
 
-.info span {
+.info div {
 	font-family: 'Spartan', sans-serif;
 	font-size: 14px;
 	color: #979797;
@@ -74,7 +74,14 @@
 	font-weight: lighter;
 	display: block;
 	margin-top: 24px;
-	/* outline: 1px solid red; */
+}
+
+.info div a {
+	font-family: 'Spartan', sans-serif;
+	font-size: 14px;
+	color: #979797;
+	text-transform: capitalize;
+	font-weight: bold;
 }
 
 .extra-info {
