@@ -6,14 +6,14 @@
 
 .container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 0.1fr 1fr 1fr;
 	gap: 0px 0px;
 	grid-auto-flow: row;
 	grid-template-areas:
-		'header header header'
-		'image image info'
-		'extra-info extra-info extra-info';
+		'header header'
+		'image info '
+		'extra-info extra-info';
 
 	background-image: url(./assets/background-stars.svg);
 	background-color: #070724;
@@ -42,8 +42,22 @@
 
 .info {
 	grid-area: info;
-
 	outline: 2px solid yellow;
+}
+
+.info h1 {
+	font-family: 'Antonio', sans-serif;
+	color: white;
+	font-size: 80px;
+	text-transform: uppercase;
+}
+
+.info p {
+	font-family: 'Spartan', sans-serif;
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: lighter;
+	color: white;
 }
 
 .extra-info {
