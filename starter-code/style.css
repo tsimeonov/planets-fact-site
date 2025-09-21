@@ -28,6 +28,7 @@
 	/* outline: 2px solid red; */
 	padding: 22px 32px;
 	position: relative;
+	border-bottom: 1px solid #979797;
 }
 
 .image {
@@ -250,10 +251,6 @@ nav ul li a::before {
 }
 
 @media screen and (max-width: 790px) {
-	.menubar.active {
-		border-top: 1px solid white;
-	}
-
 	.menubar {
 		justify-content: flex-start;
 	}
