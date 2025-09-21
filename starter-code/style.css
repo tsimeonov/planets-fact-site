@@ -102,11 +102,6 @@ nav ul li a::before {
 	transition: opacity 0.3s ease-in;
 }
 
-nav ul li a:hover::before {
-	/* Shows the line on hover */
-	opacity: 1;
-}
-
 .hamburger {
 	display: none;
 	cursor: pointer;
@@ -173,9 +168,9 @@ nav ul li a:hover::before {
 .menubar ul li {
 	display: flex;
 	align-items: center;
-	/* justify-content: space-between; */
-	margin-top: 20px;
-	padding-bottom: 45px;
+	padding-bottom: 23px;
+	padding-top: 23px;
+
 	border-bottom: 1px solid #979797;
 	width: 90vw;
 }
