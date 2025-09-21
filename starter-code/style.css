@@ -84,6 +84,20 @@
 	font-weight: bold;
 }
 
+.info div span {
+	width: 12px;
+	height: 12px;
+	/* This creates the grey box */
+	background-color: #979797;
+
+	/* This makes the arrow character match the page background */
+	color: #070724;
+	border-radius: 5px;
+	margin-left: 8px;
+
+	padding: 5px;
+}
+
 .extra-info {
 	grid-area: extra-info;
 
