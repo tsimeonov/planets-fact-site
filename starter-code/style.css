@@ -20,6 +20,8 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
+	max-width: 1440px;
+	margin: 0 auto;
 	overflow: hidden;
 }
 
@@ -38,11 +40,12 @@
 	align-items: center;
 
 	outline: 1px solid green;
+	margin-left: 165px;
 }
 
 .info {
 	grid-area: info;
-
+	margin-right: 165px;
 	outline: 1px solid yellow;
 }
 
@@ -51,6 +54,26 @@
 	font-size: 80px;
 	color: white;
 	text-transform: uppercase;
+	margin-top: 120px;
+}
+
+.info p {
+	font-family: 'Spartan', sans-serif;
+	font-size: 14px;
+	color: white;
+	font-weight: lighter;
+	line-height: 25px;
+	padding-top: 23px;
+}
+
+.info span {
+	font-family: 'Spartan', sans-serif;
+	font-size: 14px;
+	color: #979797;
+	text-transform: capitalize;
+	font-weight: lighter;
+	margin-top: 24px;
+	/* outline: 1px solid red; */
 }
 
 .extra-info {
