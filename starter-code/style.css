@@ -170,9 +170,15 @@ nav ul li a::before {
 	align-items: center;
 	padding-bottom: 23px;
 	padding-top: 23px;
-
 	border-bottom: 1px solid #979797;
 	width: 90vw;
+	transition: 0.3s ease-in;
+}
+
+.menubar ul li:hover {
+	cursor: pointer;
+	background-color: #419ebb;
+	transition: 0.3s ease-in;
 }
 
 .menubar ul li:last-child {
