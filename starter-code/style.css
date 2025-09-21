@@ -194,10 +194,6 @@ nav ul li a:hover::before {
 	background-color: #f7cc7f;
 }
 
-.menubar ul li:nth-child(2) span:last-child {
-	color: #d8d8d8;
-}
-
 .menubar ul li:nth-child(3) span:first-child {
 	background-color: #545bfe;
 }
@@ -220,6 +216,17 @@ nav ul li a:hover::before {
 
 .menubar ul li:nth-child(8) span:first-child {
 	background-color: #497efa;
+}
+
+.menubar ul li:nth-child(1) span:last-child,
+.menubar ul li:nth-child(2) span:last-child,
+.menubar ul li:nth-child(3) span:last-child,
+.menubar ul li:nth-child(4) span:last-child,
+.menubar ul li:nth-child(5) span:last-child,
+.menubar ul li:nth-child(6) span:last-child,
+.menubar ul li:nth-child(7) span:last-child,
+.menubar ul li:nth-child(8) span:last-child {
+	color: #d8d8d8;
 }
 
 .menubar ul li a {
