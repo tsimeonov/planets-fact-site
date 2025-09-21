@@ -173,6 +173,7 @@ nav ul li a:hover::before {
 .menubar ul li {
 	display: flex;
 	align-items: center;
+	/* justify-content: space-between; */
 	margin-top: 20px;
 	padding-bottom: 45px;
 	border-bottom: 1px solid #979797;
@@ -188,6 +189,10 @@ nav ul li a:hover::before {
 	width: 20px;
 	height: 20px;
 	background-color: #def4fc;
+}
+
+.menubar ul li span:last-child {
+	margin-left: auto;
 }
 
 .menubar ul li:nth-child(2) span:first-child {
