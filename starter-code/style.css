@@ -12,12 +12,12 @@
 	grid-auto-flow: row;
 	grid-template-areas:
 		'header header'
-		'image info '
+		'image info'
 		'extra-info extra-info';
 
 	background-image: url(./assets/background-stars.svg);
 	background-color: #070724;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
 	overflow: hidden;
@@ -33,37 +33,20 @@
 
 .image {
 	grid-area: image;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 
-	outline: 1px solid green;
+	/* outline: 1px solid green; */
 }
 
 .info {
 	grid-area: info;
-	outline: 2px solid yellow;
-}
 
-.info h1 {
-	font-family: 'Antonio', sans-serif;
-	color: white;
-	font-size: 80px;
-	text-transform: uppercase;
-}
-
-.info p {
-	font-family: 'Spartan', sans-serif;
-	font-size: 14px;
-	line-height: 25px;
-	font-weight: lighter;
-	color: white;
+	/* outline: 1px solid yellow; */
 }
 
 .extra-info {
 	grid-area: extra-info;
 
-	outline: 1px solid blue;
+	/* outline: 1px solid blue; */
 }
 
 nav {
@@ -188,7 +171,7 @@ nav ul li a::before {
 	align-items: center;
 	padding-bottom: 23px;
 	padding-top: 23px;
-	border-bottom: 1px solid #979797;
+	/* border-bottom: 1px solid #979797; */
 	width: 90vw;
 	transition: 0.3s ease-in;
 }
@@ -268,6 +251,10 @@ nav ul li a::before {
 }
 
 @media screen and (max-width: 790px) {
+	.menubar.active {
+		border-top: 1px solid white;
+	}
+
 	.menubar {
 		justify-content: flex-start;
 	}
