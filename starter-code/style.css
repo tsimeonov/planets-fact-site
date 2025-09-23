@@ -87,29 +87,34 @@
 	margin-left: 8px;
 }
 
-.info div span:first-child {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.info div span:last-child {
+	/* This creates a positioning "anchor" for the arrow */
+	position: relative;
+
+	/* Your container styles */
+	display: inline-block; /* Use inline-block for a simple container */
 	width: 12px;
 	height: 12px;
-	/* This creates the grey box */
 	background-color: #979797;
-
-	/* This makes the arrow character match the page background */
-	color: #070724;
 	border-radius: 2px;
 	margin-left: 8px;
-	/* display: flex;
-	justify-content: center;
-	align-items: ce; */
-	outline: 1px solid red;
 }
 
-.info div span:nth-child(2) {
-	outline: 2px solid green;
-	font-size: 10px;
+/* 2. Style and rotate the arrow itself */
+.arrow {
+	/* Position the arrow relative to its parent anchor */
 	position: absolute;
+
+	/* The centering trick: move to the middle, then pull back by half its own size */
+	top: 50%;
+	left: 50%;
+
+	/* This transform both centers AND rotates the arrow */
+	transform: translate(-50%, -50%) rotate(-45deg);
+
+	/* Set the arrow color */
+	color: #070724;
+	background-color: transparent;
 }
 
 .extra-info {
