@@ -75,6 +75,7 @@
 	display: flex;
 	align-items: center;
 	margin-top: 24px;
+	position: relative;
 }
 
 .info div a {
@@ -106,8 +107,9 @@
 }
 
 .info div span:nth-child(2) {
-	outline: 1px solid green;
-	font-size: 6px;
+	outline: 2px solid green;
+	font-size: 10px;
+	position: absolute;
 }
 
 .extra-info {
