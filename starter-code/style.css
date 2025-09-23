@@ -108,9 +108,6 @@
 .info div span:nth-child(2) {
 	outline: 1px solid green;
 	font-size: 6px;
-	/* transform: rotate(-45deg); */
-	/* width: 7px;
-	height: 5px; */
 }
 
 .extra-info {
