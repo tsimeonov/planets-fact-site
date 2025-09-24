@@ -93,7 +93,7 @@
 .extra-info {
 	grid-area: extra-info;
 
-	/* outline: 1px solid blue; */
+	outline: 1px solid blue;
 }
 
 nav {
