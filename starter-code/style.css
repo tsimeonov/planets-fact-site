@@ -64,6 +64,7 @@
 	font-weight: lighter;
 	line-height: 25px;
 	padding-top: 23px;
+	margin-bottom: 24px;
 }
 
 .info div {
@@ -77,6 +78,13 @@
 	justify-content: flex-start;
 	/* margin-top: 24px; */
 	position: relative;
+}
+
+.info div > div {
+	height: 12px;
+	width: 12px;
+	outline: 1px solid red;
+	background-color: white;
 }
 
 .info div a {
