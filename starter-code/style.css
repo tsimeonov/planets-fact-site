@@ -163,8 +163,11 @@
 
 .extra-info {
 	grid-area: extra-info;
-
+	color: white;
+	margin-top: 90px;
 	outline: 1px solid blue;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 nav {
