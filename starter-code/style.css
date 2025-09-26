@@ -40,12 +40,12 @@
 	align-items: center;
 
 	outline: 1px solid green;
-	margin-left: 165px;
+	margin-left: 135px;
 }
 
 .info {
 	grid-area: info;
-	margin-right: 165px;
+	margin-right: 135px;
 	outline: 1px solid yellow;
 }
 
