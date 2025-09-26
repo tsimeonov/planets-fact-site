@@ -176,6 +176,8 @@
 	padding-top: 20px;
 	padding-left: 23px;
 	padding-bottom: 28px;
+	width: 15.93em;
+	/* padding-right: 90px; */
 }
 
 .extra-info p {
@@ -184,6 +186,14 @@
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	color: #979797;
+	padding-bottom: 7px;
+}
+
+.extra-info span {
+	font-family: 'Antonio', sans-serif;
+	font-size: 40px;
+	text-transform: capitalize;
+	/* margin-top: 14px; */
 }
 
 nav {
