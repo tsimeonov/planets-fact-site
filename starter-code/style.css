@@ -168,6 +168,22 @@
 	outline: 1px solid blue;
 	display: flex;
 	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+.extra-info div {
+	border: 1px solid #979797;
+	padding-top: 20px;
+	padding-left: 23px;
+	padding-bottom: 28px;
+}
+
+.extra-info p {
+	font-family: 'Spartan', sans-serif;
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #979797;
 }
 
 nav {
