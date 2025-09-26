@@ -115,9 +115,18 @@
 }
 
 .info > div + div > button {
+	width: 100%;
 	margin-bottom: 8px;
-	width: 350px;
-	height: 48px;
+	padding: 13px 0 13px 28px;
+	text-align: start;
+	/* width: 350px;
+	height: 48px; */
+}
+
+.info > div + div > button > span {
+	/* padding-left: 28px; */
+	/* padding-top: 13px;
+	padding-bottom: 13px; */
 }
 
 .extra-info {
