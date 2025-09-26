@@ -107,7 +107,17 @@
 	margin-left: 8px;
 }
 
-.info div span {
+.info > div + div {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 40px;
+}
+
+.info > div + div > button {
+	margin-bottom: 8px;
+	width: 350px;
+	height: 48px;
 }
 
 .extra-info {
