@@ -74,7 +74,7 @@
 	text-transform: capitalize;
 	font-weight: lighter;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: flex-start;
 	/* margin-top: 24px; */
 
@@ -89,7 +89,7 @@
 	background-color: #979797;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	/* align-items: flex-end; */
 	margin-left: 8px;
 }
 
