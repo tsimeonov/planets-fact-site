@@ -138,12 +138,17 @@
 	font-size: 12px;
 	line-height: 25px;
 	font-weight: bold;
-	color: #979797;
+	color: white;
 	letter-spacing: 2.57px;
 
 	/* padding-left: 28px; */
 	/* padding-top: 13px;
 	padding-bottom: 13px; */
+}
+
+.info > div + div > button:hover {
+	background-color: #979797;
+	cursor: pointer;
 }
 
 .extra-info {
