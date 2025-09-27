@@ -9,6 +9,10 @@ const revolutionTime = document.querySelector('.revolution span');
 const radius = document.querySelector('.radius span');
 const avgTemp = document.querySelector('.avg-temp span');
 
+const overviewBtn = document.querySelectorAll('.info > div + div > button')[0];
+const structureBtn = document.querySelectorAll('.info > div + div > button')[1];
+const geologyBtn = document.querySelectorAll('.info > div + div > button')[2];
+
 const mobileNav = document.querySelector('.hamburger');
 const navbar = document.querySelector('.menubar');
 // const header = document.querySelector('.header');
