@@ -66,6 +66,11 @@ function updateContent() {
 	if (currentView === 'geology') {
 		// We need to show both plantes and the geology image
 		const existingGeologyImg = document.querySelector('.geology-img');
+		if (!existingGeologyImg) {
+			const geologyImg = document.createElement('img');
+			geologyImg.src = currentPlanet.images.geology;
+			geologyImg.alt = `Surface geology of ${currentPlanet.name}`;
+		}
 	}
 }
 
