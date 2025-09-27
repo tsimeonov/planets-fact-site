@@ -53,6 +53,22 @@ function updatePlanetInfo(name) {
 	updateStats();
 }
 
+// Update the main description and image based on the current view
+
+function updateContent() {
+	if (!currentPlanet.name) return;
+
+	planetDescription.textContent = currentPlanet[currentView].content;
+	wikiLink.href = currentPlanet[currentView].source;
+
+	// Handle image updates
+	// The main planet image only changes for geology view
+	if (currentView === 'geology') {
+		// We need to show both plantes and the geology image
+		const existingGeologyImg = document.querySelector('.geology-img');
+	}
+}
+
 const toggleNav = () => {
 	navbar.classList.toggle('active');
 	mobileNav.classList.toggle('hamburger-active');
