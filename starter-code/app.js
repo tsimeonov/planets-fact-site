@@ -38,6 +38,21 @@ async function fetchPlanetData() {
 	}
 }
 
+// Update the page content with information for the selected planet
+function updatePlanetInfo(name) {
+	const planet = planetsData.find(
+		(p) => p.name.LowerCase() === name.toLowerCase()
+	);
+	if (!planet) return;
+
+	currentPlanet = planet;
+	currentView = 'overview'; // Reset to overview when changing planets
+
+	planetName.textContent = planet.name;
+	updateContent(); // Initial content update
+	updateStats();
+}
+
 const toggleNav = () => {
 	navbar.classList.toggle('active');
 	mobileNav.classList.toggle('hamburger-active');
