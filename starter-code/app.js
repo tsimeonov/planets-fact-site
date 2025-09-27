@@ -28,8 +28,14 @@ async function fetchPlanetData() {
 	try {
 		const response = await fetch('./data.json');
 		if (!response.ok) {
+			throw new Error(`HTTP error! status ${response.status}`);
 		}
-	} catch {}
+		planetsData = await response.json();
+		// Load mercury by default
+		updatePlanetInfo('Mercury');
+	} catch (error) {
+		console.log('Could not fetch planet data', error);
+	}
 }
 
 const toggleNav = () => {
