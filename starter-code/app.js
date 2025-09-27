@@ -3,6 +3,11 @@ const planetLinks = document.querySelectorAll('nav ul li a, .menubar ul li a');
 const planetImage = document.querySelector('.image img');
 const planetName = document.querySelector('.info h1');
 const planetDescription = document.querySelector('.info p');
+const wikiLink = document.querySelector('.info div a');
+const rotationTime = document.querySelector('.rotation span');
+const revolutionTime = document.querySelector('.revolution span');
+const radius = document.querySelector('.radius span');
+const avgTemp = document.querySelector('.avg-temp span');
 
 const mobileNav = document.querySelector('.hamburger');
 const navbar = document.querySelector('.menubar');
