@@ -21,7 +21,7 @@
 	background-repeat: no-repeat;
 	min-height: 100vh;
 	max-width: 1440px;
-	margin: 0 auto;
+	margin: 0 50px;
 	overflow: hidden;
 }
 
@@ -291,7 +291,8 @@ nav ul li a::before {
 .menubar {
 	position: absolute;
 	top: 110%;
-	left: -100%;
+	left: 0;
+	transform: translateX(-100%);
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -305,7 +306,7 @@ nav ul li a::before {
 }
 
 .active {
-	left: 0;
+	transform: translateX(0);
 }
 
 .menubar ul {
@@ -319,7 +320,7 @@ nav ul li a::before {
 	padding-bottom: 23px;
 	padding-top: 23px;
 	/* border-bottom: 1px solid #979797; */
-	width: 90vw;
+	width: 100%;
 	transition: 0.3s ease-in;
 }
 
