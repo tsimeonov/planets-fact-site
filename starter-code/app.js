@@ -2,6 +2,7 @@
 const planetLinks = document.querySelectorAll('nav ul li a, .menubar ul li a');
 const planetImage = document.querySelector('.image img');
 const planetName = document.querySelector('.info h1');
+const planetDescription = document.querySelector('.info p');
 
 const mobileNav = document.querySelector('.hamburger');
 const navbar = document.querySelector('.menubar');
