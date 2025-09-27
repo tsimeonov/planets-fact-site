@@ -17,6 +17,12 @@ const mobileNav = document.querySelector('.hamburger');
 const navbar = document.querySelector('.menubar');
 // const header = document.querySelector('.header');
 
+// State
+
+let planetsFunction = [];
+let currentPlanet = [];
+let currentView = 'overview'; // "overview" , "structure", "geology"
+
 const toggleNav = () => {
 	navbar.classList.toggle('active');
 	mobileNav.classList.toggle('hamburger-active');
