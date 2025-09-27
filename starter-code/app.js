@@ -23,6 +23,15 @@ let planetsFunction = [];
 let currentPlanet = [];
 let currentView = 'overview'; // "overview" , "structure", "geology"
 
+// Fetches planets data from the json file
+async function fetchPlanetData() {
+	try {
+		const response = await fetch('./data.json');
+		if (!response.ok) {
+		}
+	} catch {}
+}
+
 const toggleNav = () => {
 	navbar.classList.toggle('active');
 	mobileNav.classList.toggle('hamburger-active');
