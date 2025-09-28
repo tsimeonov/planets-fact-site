@@ -336,6 +336,7 @@ nav ul li a::before {
 
 .menubar ul {
 	padding: 0;
+	width: 100%;
 	list-style: none;
 }
 
@@ -345,14 +346,18 @@ nav ul li a::before {
 	padding-bottom: 23px;
 	padding-top: 23px;
 	/* border-bottom: 1px solid #979797; */
-	width: 100%;
+	/* width: 100%; */
 	transition: 0.3s ease-in;
 }
 
 .menubar ul li:hover {
 	cursor: pointer;
-	background-color: #419ebb;
+	/* background-color: #419ebb; */
 	transition: 0.3s ease-in;
+}
+
+.menubar ul li:active {
+	transform: scale(0.98);
 }
 
 .menubar ul li:last-child {
@@ -424,9 +429,9 @@ nav ul li a::before {
 }
 
 @media screen and (max-width: 790px) {
-	.menubar.active {
+	/* .menubar.active {
 		border-top: 1px solid white;
-	}
+	} */
 
 	.menubar {
 		justify-content: flex-start;
