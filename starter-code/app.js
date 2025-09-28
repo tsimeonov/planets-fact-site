@@ -122,3 +122,18 @@ const toggleNav = () => {
 	// header.classList.toggle('header-border-active');
 };
 mobileNav.addEventListener('click', () => toggleNav());
+
+// Event Listeners
+
+// Add clicj event listeners to all planet links
+planetLinks.forEach((link) => {
+	link.addEventListener('click', (e) => {
+		e.preventDefault();
+		const planetName = e.target.textContent;
+		updatePlanetInfo(planetName);
+		// If in mobile view close the menu after selection
+		if (navbar.classList.contains('active')) {
+			toggleNav();
+		}
+	});
+});
