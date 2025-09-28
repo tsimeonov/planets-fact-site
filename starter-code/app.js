@@ -74,7 +74,20 @@ function updateContent() {
 			planetImage.parentElement.appendChild(geologyImg);
 		}
 		planetImage.style.display = 'none'; // Hide the main planet image
+	} else {
+		// For overview and structure, remove geology image if it exists
+		const geologyImg = document.querySelector('.geology-img');
+		if (geologyImg) {
+			geologyImg.remove();
+		}
+		planetImage.style.display = 'block'; // show the main planet image
+		planetImage.src =
+			currentView === 'overview'
+				? currentPlanet.images.planet
+				: currentPlanet.images.internal;
 	}
+
+	updateActiveButton();
 }
 
 const toggleNav = () => {
