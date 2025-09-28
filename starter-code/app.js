@@ -143,3 +143,8 @@ overviewBtn.addEventListener('click', () => {
 	currentView = 'overview';
 	updateContent();
 });
+
+structureBtn.addEventListener('click', () => {
+	currentView = 'structure';
+	updateContent();
+});
