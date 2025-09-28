@@ -27,10 +27,12 @@
 
 .header {
 	grid-area: header;
+	/* position: relative;
+	z-index: 2; */
 	/* outline: 2px solid red; */
 	padding: 22px 32px;
 	position: relative;
-	border-bottom: 1px solid #979797;
+	/* border-bottom: 1px solid #979797; */
 }
 
 .image {
@@ -39,12 +41,12 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	outline: 1px solid green;
+	/* outline: 1px solid green; */
 	/* margin-left: 135px; */
 }
 
 .planet-img {
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -65,7 +67,7 @@
 .info {
 	grid-area: info;
 	/* margin-right: 135px; */
-	outline: 1px solid yellow;
+	/* outline: 1px solid yellow; */
 }
 
 .info h1 {
@@ -221,6 +223,8 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border-bottom: 1px solid #979797;
+	padding-bottom: 18px;
 	width: 100%;
 }
 
@@ -319,7 +323,7 @@ nav ul li a::before {
 	align-items: flex-start;
 	width: 100vw;
 	height: 100vh;
-	padding: 46px 24px;
+	padding: 100px 82px;
 	background-color: #070724;
 
 	transition: all 0.5s ease-in;
