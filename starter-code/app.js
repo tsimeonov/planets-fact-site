@@ -137,3 +137,9 @@ planetLinks.forEach((link) => {
 		}
 	});
 });
+
+// Event listeners for the overview, structure and geology button
+overviewBtn.addEventListener('click', () => {
+	currentView = 'overview';
+	updateContent();
+});
