@@ -126,8 +126,10 @@ function updateActiveButton() {
 const toggleNav = () => {
 	navbar.classList.toggle('active');
 	mobileNav.classList.toggle('hamburger-active');
+
 	// header.classList.toggle('header-border-active');
 };
+
 mobileNav.addEventListener('click', () => toggleNav());
 
 // Event Listeners

@@ -216,6 +216,8 @@
 }
 
 nav {
+	position: relative;
+	z-index: 2;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -308,14 +310,14 @@ nav ul li a::before {
 }
 
 .menubar {
-	position: absolute;
-	top: 110%;
+	position: fixed;
+	top: 0;
 	left: 0;
 	transform: translateX(-100%);
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	padding: 46px 24px;
 	background-color: #070724;
