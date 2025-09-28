@@ -66,6 +66,8 @@
 
 .info {
 	grid-area: info;
+	display: flex;
+	flex-direction: column;
 	/* margin-right: 135px; */
 	/* outline: 1px solid yellow; */
 }
@@ -89,25 +91,28 @@
 }
 
 .info-content {
+	/* display: flex; */
 	font-family: 'Spartan', sans-serif;
 	font-size: 14px;
 	color: #979797;
 	text-transform: capitalize;
 	font-weight: lighter;
 	display: flex;
-	align-items: flex-end;
+	flex-direction: column;
+	align-items: flex-start;
 	justify-content: flex-start;
+
 	outline: 1px solid red;
 	/* margin-top: 24px; */
 
 	/* position: relative; */
 }
 
-.info div > div {
+.info-source-source {
 	height: 10px;
 	width: 10px;
 	border-radius: 3px;
-	/* outline: 1px solid red; */
+	outline: 1px solid green;
 	background-color: #979797;
 	display: flex;
 	justify-content: center;
