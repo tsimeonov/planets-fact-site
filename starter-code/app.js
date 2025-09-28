@@ -148,3 +148,8 @@ structureBtn.addEventListener('click', () => {
 	currentView = 'structure';
 	updateContent();
 });
+
+geologyBtn.addEventListener('click', () => {
+	currentView = 'geology';
+	updateContent();
+});
