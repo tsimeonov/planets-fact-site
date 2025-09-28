@@ -38,9 +38,28 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	position: relative;
 	outline: 1px solid green;
 	/* margin-left: 135px; */
+}
+
+.planet-img {
+	outline: 1px solid red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	/* transform: translateY(-50%); */
+	/* z-index: 10; */
+}
+
+.geology-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 80%);
+	width: 162px;
 }
 
 .info {

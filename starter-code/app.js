@@ -1,6 +1,6 @@
 // DOM element selection
 const planetLinks = document.querySelectorAll('nav ul li a, .menubar ul li a');
-const planetImage = document.querySelector('.image img');
+const planetImage = document.querySelector('.planet-img');
 const planetName = document.querySelector('.info h1');
 const planetDescription = document.querySelector('.info p');
 const wikiLink = document.querySelector('.info div a');
@@ -61,19 +61,26 @@ function updateContent() {
 	planetDescription.textContent = currentPlanet[currentView].content;
 	wikiLink.href = currentPlanet[currentView].source;
 
+	// Always insure the main planet image is visible
+	planetImage.style.display = 'block';
+
+	const geologyImg = document.querySelector('.geology-img');
+
 	// Handle image updates
 	// The main planet image only changes for geology view
 	if (currentView === 'geology') {
 		// We need to show both plantes and the geology image
-		const existingGeologyImg = document.querySelector('.geology-img');
-		if (!existingGeologyImg) {
-			const geologyImg = document.createElement('img');
-			geologyImg.src = currentPlanet.images.geology;
-			geologyImg.alt = `Surface geology of ${currentPlanet.name}`;
-			geologyImg.classList.add('geology-img');
-			planetImage.parentElement.appendChild(geologyImg);
+		// Set the main image to the base planet image (overview)
+		planetImage.src = currentPlanet.images.planet;
+
+		// Add the geology image on top if it doesn't exist
+		if (!geologyImg) {
+			const newGeologyImg = document.createElement('img');
+			newGeologyImg.src = currentPlanet.images.geology;
+			newGeologyImg.alt = `Surface geology of ${currentPlanet.name}`;
+			newGeologyImg.classList.add('geology-img');
+			planetImage.parentElement.appendChild(newGeologyImg);
 		}
-		planetImage.style.display = 'none'; // Hide the main planet image
 	} else {
 		// For overview and structure, remove geology image if it exists
 		const geologyImg = document.querySelector('.geology-img');
