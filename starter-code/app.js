@@ -153,3 +153,6 @@ geologyBtn.addEventListener('click', () => {
 	currentView = 'geology';
 	updateContent();
 });
+
+// Initial load
+document.addEventListener('DOMContentLoaded', fetchPlanetData);
