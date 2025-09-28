@@ -129,14 +129,15 @@
 	margin-left: 8px;
 }
 
-.info > div + div {
+/* .info > div + div { */
+.info-buttons {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	margin-top: 40px;
 }
 
-.info > div + div > button {
+.info-buttons > button {
 	width: 100%;
 	margin-bottom: 8px;
 	padding: 13px 0 13px 28px;
@@ -156,7 +157,7 @@
 	height: 48px; */
 }
 
-.info > div + div > button > span {
+.info-buttons > button > span {
 	/* outline: 1px solid red; */
 	font-family: 'Spartan', sans-serif;
 	font-size: 12px;
@@ -170,13 +171,13 @@
 	padding-bottom: 13px; */
 }
 
-.info > div + div > button:hover {
+.info-buttons > button:hover {
 	background-color: #979797;
 	cursor: pointer;
 	transition: 0.2s ease-in;
 }
 
-.info > div + div > button:active {
+.info-buttons > button:active {
 	background-color: #419ebb;
 	border: 1px solid transparent;
 	transform: scale(0.98);
@@ -435,7 +436,9 @@ nav ul li a::before {
 	.container {
 		grid-template-rows: auto 1fr 1fr auto;
 		grid-template-areas:
-			'header header header' 'image image image' 'info info info'
+			'header header header'
+			'image image image'
+			'info info info'
 			'extra-info extra-info extra-info';
 	}
 	.header {
@@ -454,6 +457,16 @@ nav ul li a::before {
 
 	.info {
 		display: flex;
+	}
+
+	.info-content {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
+
+	.info-buttons {
+		flex: 1;
 	}
 }
 
