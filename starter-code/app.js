@@ -70,7 +70,10 @@ function updateContent() {
 			const geologyImg = document.createElement('img');
 			geologyImg.src = currentPlanet.images.geology;
 			geologyImg.alt = `Surface geology of ${currentPlanet.name}`;
+			geologyImg.classList.add('geology-img');
+			planetImage.parentElement.appendChild(geologyImg);
 		}
+		planetImage.style.display = 'none'; // Hide the main planet image
 	}
 }
 
