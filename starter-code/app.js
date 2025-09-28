@@ -41,7 +41,7 @@ async function fetchPlanetData() {
 // Update the page content with information for the selected planet
 function updatePlanetInfo(name) {
 	const planet = planetsData.find(
-		(p) => p.name.LowerCase() === name.toLowerCase()
+		(p) => p.name.toLowerCase() === name.toLowerCase()
 	);
 	if (!planet) return;
 
