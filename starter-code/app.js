@@ -90,6 +90,17 @@ function updateContent() {
 	updateActiveButton();
 }
 
+// Update the four stat boxes at the bottom of the page
+
+function updateStats() {
+	if (!currentPlanet.name) return;
+
+	rotationTime.textContent = currentPlanet.rotation;
+	revolutionTime.textContent = currentPlanet.revolution;
+	radius.textContent = currentPlanet.radius;
+	avgTemp.textContent = currentPlanet.temperature;
+}
+
 const toggleNav = () => {
 	navbar.classList.toggle('active');
 	mobileNav.classList.toggle('hamburger-active');
