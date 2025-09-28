@@ -101,6 +101,21 @@ function updateStats() {
 	avgTemp.textContent = currentPlanet.temperature;
 }
 
+// Update the active state of overview / structure / geology buttons
+function updateActiveButton() {
+	overviewBtn.classList.remove('active-plantet-button');
+	structureBtn.classList.remove('active-planet-button');
+	geologyBtn.classList.remove('active-planet-button');
+
+	if (currentView === 'overview') {
+		overviewBtn.classList.add('active-planet-button');
+	} else if (currentView === 'structure') {
+		structureBtn.classList.add('active-planet-button');
+	} else if (currentView === 'geology') {
+		geologyBtn.classList.add('active-plantet-button');
+	}
+}
+
 const toggleNav = () => {
 	navbar.classList.toggle('active');
 	mobileNav.classList.toggle('hamburger-active');
