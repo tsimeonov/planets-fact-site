@@ -468,6 +468,14 @@ nav ul li a::before {
 		display: flex;
 	}
 
+	.info h1 {
+		margin-top: 0;
+	}
+
+	.planet-img {
+		width: 300px;
+	}
+
 	.info-content {
 		display: flex;
 		flex-direction: column;
