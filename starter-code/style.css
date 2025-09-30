@@ -460,6 +460,10 @@ nav ul li a::before {
 		margin-bottom: 40px;
 	}
 
+	nav ul {
+		width: 100%;
+	}
+
 	.info {
 		display: flex;
 	}
