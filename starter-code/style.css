@@ -27,12 +27,8 @@
 
 .header {
 	grid-area: header;
-	/* position: relative;
-	z-index: 2; */
-	/* outline: 2px solid red; */
 	padding: 22px 32px;
 	position: relative;
-	/* border-bottom: 1px solid #979797; */
 }
 
 .image {
@@ -41,8 +37,6 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	/* outline: 1px solid green; */
-	/* margin-left: 135px; */
 }
 
 .planet-img {
@@ -52,8 +46,6 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 500px;
-	/* transform: translateY(-50%); */
-	/* z-index: 10; */
 }
 
 .geology-img {
@@ -89,7 +81,6 @@
 }
 
 .info-content {
-	/* display: flex; */
 	font-family: 'Spartan', sans-serif;
 	font-size: 14px;
 	color: #979797;
@@ -115,7 +106,6 @@
 	margin-left: 8px;
 }
 
-/* .info > div + div { */
 .info-buttons {
 	display: flex;
 	flex-direction: column;
@@ -138,9 +128,6 @@
 	background-color: transparent;
 	text-transform: uppercase;
 	transition: 0.2s ease-in;
-
-	/* width: 350px;
-	height: 48px; */
 }
 
 .info-buttons > button > span {
@@ -151,10 +138,6 @@
 	font-weight: bold;
 	color: white;
 	letter-spacing: 2.57px;
-
-	/* padding-left: 28px; */
-	/* padding-top: 13px;
-	padding-bottom: 13px; */
 }
 
 .info-buttons > button:hover {
@@ -335,8 +318,6 @@ nav ul li a::before {
 	align-items: center;
 	padding-bottom: 23px;
 	padding-top: 23px;
-	/* border-bottom: 1px solid #979797; */
-	/* width: 100%; */
 	transition: 0.3s ease-in;
 }
 
@@ -432,7 +413,6 @@ nav ul li a::before {
 	}
 
 	nav {
-		/* display: flex; */
 		flex-direction: column;
 		padding-bottom: 28px;
 	}
@@ -480,10 +460,6 @@ nav ul li a::before {
 }
 
 @media screen and (max-width: 790px) {
-	/* .menubar.active {
-		border-top: 1px solid white;
-	} */
-
 	.menubar {
 		justify-content: flex-start;
 	}
