@@ -37,6 +37,7 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	margin: 0 32px;
 }
 
 .planet-img {
@@ -59,6 +60,7 @@
 	grid-area: info;
 	display: flex;
 	flex-direction: column;
+	margin: 0 32px 0 0;
 }
 
 .info h1 {
@@ -158,6 +160,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 0 32px 56px 32px;
 }
 
 .extra-info div {
