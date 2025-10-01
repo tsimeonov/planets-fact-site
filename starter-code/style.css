@@ -409,7 +409,7 @@ nav ul li a::before {
 			'extra-info extra-info extra-info';
 	}
 	.header {
-		padding-top: 32px;
+		padding: 32px 0;
 	}
 
 	nav {
