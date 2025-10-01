@@ -407,7 +407,9 @@ nav ul li a::before {
 			'image image image'
 			'info info info'
 			'extra-info extra-info extra-info';
+		/* margin: 30px 50px; */
 	}
+
 	.header {
 		padding: 32px 0;
 	}
@@ -458,6 +460,11 @@ nav ul li a::before {
 		flex: 1;
 	}
 
+	.info-content-source {
+		display: flex;
+		align-items: flex-end;
+	}
+
 	.info-buttons {
 		flex: 1;
 		align-content: flex-end;
@@ -472,6 +479,18 @@ nav ul li a::before {
 
 	.info-buttons > button > span {
 		font-size: 9px;
+	}
+
+	.extra-info {
+		margin-bottom: 35px;
+	}
+
+	.extra-info p {
+		font-size: 8px;
+	}
+
+	.extra-info span {
+		font-size: 24px;
 	}
 }
 
