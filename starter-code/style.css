@@ -460,6 +460,18 @@ nav ul li a::before {
 
 	.info-buttons {
 		flex: 1;
+		align-content: flex-end;
+		flex-wrap: wrap;
+	}
+
+	.info-buttons > button {
+		width: 280px;
+		font-size: 9px;
+		letter-spacing: 1.93px;
+	}
+
+	.info-buttons > button > span {
+		font-size: 9px;
 	}
 }
 
