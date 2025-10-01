@@ -422,8 +422,12 @@ nav ul li a::before {
 	}
 
 	nav ul {
-		justify-content: center;
+		justify-content: space-between;
 		width: 100%;
+	}
+
+	nav ul li a:first-child {
+		margin-left: 0;
 	}
 
 	.info {
