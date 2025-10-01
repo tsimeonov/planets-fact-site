@@ -21,7 +21,7 @@
 	background-repeat: no-repeat;
 	min-height: 100vh;
 	max-width: 1440px;
-	margin: 0 50px;
+	margin: 0 auto;
 	overflow: hidden;
 }
 
@@ -40,7 +40,6 @@
 }
 
 .planet-img {
-	/* outline: 1px solid red; */
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -131,7 +130,6 @@
 }
 
 .info-buttons > button > span {
-	/* outline: 1px solid red; */
 	font-family: 'Spartan', sans-serif;
 	font-size: 12px;
 	line-height: 25px;
@@ -150,7 +148,6 @@
 	background-color: #419ebb;
 	border: 1px solid transparent;
 	transform: scale(0.98);
-	/* border: none; */
 }
 
 .extra-info {
@@ -159,7 +156,7 @@
 	margin-top: 90px;
 	outline: 1px solid blue;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -169,7 +166,6 @@
 	padding-left: 23px;
 	padding-bottom: 28px;
 	width: 15.93em;
-	/* padding-right: 90px; */
 }
 
 .extra-info p {
@@ -185,7 +181,6 @@
 	font-family: 'Antonio', sans-serif;
 	font-size: 40px;
 	text-transform: capitalize;
-	/* margin-top: 14px; */
 }
 
 nav {
@@ -298,7 +293,6 @@ nav ul li a::before {
 	height: 100vh;
 	padding: 100px 82px;
 	background-color: #070724;
-
 	transition: all 0.5s ease-in;
 	z-index: 1;
 }
@@ -407,7 +401,6 @@ nav ul li a::before {
 			'image image image'
 			'info info info'
 			'extra-info extra-info extra-info';
-		/* margin: 30px 50px; */
 	}
 
 	.header {
