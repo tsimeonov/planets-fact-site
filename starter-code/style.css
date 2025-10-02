@@ -412,8 +412,7 @@ nav ul li a::before {
 
 	nav {
 		flex-direction: column;
-		margin: 0 32px;
-		padding-bottom: 28px;
+		padding: 0 32px 28px 32px;
 	}
 
 	nav .logo {
@@ -435,6 +434,7 @@ nav ul li a::before {
 		flex-direction: row;
 		align-items: baseline;
 		width: 100%;
+		padding: 0 32px;
 	}
 
 	.info h1 {
@@ -455,7 +455,6 @@ nav ul li a::before {
 		display: flex;
 		flex-direction: column;
 		flex: 1;
-		margin-left: 32px;
 	}
 
 	.info-content-source {
