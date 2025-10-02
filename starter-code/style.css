@@ -491,6 +491,10 @@ nav ul li a::before {
 }
 
 @media screen and (max-width: 790px) {
+	.header {
+		padding: 18px 24px;
+	}
+
 	.menubar {
 		justify-content: flex-start;
 	}
@@ -502,6 +506,11 @@ nav ul li a::before {
 	nav {
 		flex-direction: row;
 		align-items: normal;
+		padding: 0;
+	}
+
+	nav .logo {
+		margin-bottom: 0;
 	}
 
 	nav ul {
