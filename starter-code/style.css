@@ -428,6 +428,10 @@ nav ul li a::before {
 		margin-left: 0;
 	}
 
+	.geology-img {
+		transform: translate(-50%, 40%);
+	}
+
 	.info {
 		display: flex;
 		row-gap: 50px;
