@@ -506,7 +506,8 @@ nav ul li a::before {
 	nav {
 		flex-direction: row;
 		align-items: normal;
-		padding: 0;
+		padding-bottom: 18px;
+		/* margin-bottom: 18px; */
 	}
 
 	nav .logo {
