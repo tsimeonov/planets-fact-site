@@ -499,6 +499,11 @@ nav ul li a::before {
 		display: block;
 	}
 
+	nav {
+		flex-direction: row;
+		align-items: normal;
+	}
+
 	nav ul {
 		display: none;
 	}
