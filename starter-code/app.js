@@ -173,4 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	// 2. Define the two different text versions
 	const longTexts = ['Overview', 'Internal Structure', 'Surface geology'];
 	const shortTexts = ['Overview', 'Structure', 'Surface'];
+
+	// 3. Create a media querry object to watch over for screen size changes
+	const mediaQuerry = window.matchMedia('(max-width: 790px)');
 });
