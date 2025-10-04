@@ -197,4 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// 5. Listen for changes in screen size
 	mediaQuerry.addEventListener('change', updateButtonText);
+
+	// 6. Call the function once on page loadto set the initial state correctly
+	updateButtonText(mediaQuerry);
 });
