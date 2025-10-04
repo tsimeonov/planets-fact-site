@@ -498,6 +498,7 @@ nav ul li a::before {
 
 @media screen and (max-width: 790px) {
 	.container {
+		grid-template-rows: auto auto 1fr auto;
 		grid-template-areas:
 			'header header header'
 			'info info info'
@@ -534,10 +535,13 @@ nav ul li a::before {
 
 	.info {
 		flex-direction: column-reverse;
+		gap: 0;
+		/* row-gap: 10px; */
 	}
 
 	.info-buttons {
 		flex-direction: row;
+		align-content: baseline;
 	}
 
 	.info-buttons > button {
