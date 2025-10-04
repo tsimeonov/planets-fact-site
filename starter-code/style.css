@@ -541,8 +541,11 @@ nav ul li a::before {
 	}
 
 	.info-buttons > button {
-		width: 190px;
-		/* display: block; */
+		flex: 1;
+		text-align: center;
+		padding: 0;
+		/* padding: 13px 5px; */
+		margin: 0;
 		border: none;
 	}
 }
