@@ -165,3 +165,12 @@ geologyBtn.addEventListener('click', () => {
 
 // Initial load
 document.addEventListener('DOMContentLoaded', fetchPlanetData);
+
+document.addEventListener('DOMContentLoaded', () => {
+	// 1. Select all three buttons
+	const infoButtons = document.querySelectorAll('.info-buttons button');
+
+	// 2. Define the two different text versions
+	const longTexts = ['Overview', 'Internal Structure', 'Surface geology'];
+	const shortTexts = ['Overview', 'Structure', 'Surface'];
+});
