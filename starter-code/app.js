@@ -176,4 +176,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// 3. Create a media querry object to watch over for screen size changes
 	const mediaQuerry = window.matchMedia('(max-width: 790px)');
+
+	// 4. Create a function to update the text based on screen size
+	function updateButtonText(e) {
+		const isMobileView = e.matches; // True if screen size id <= 790px
+
+		infoButtons.forEach((button, index) => {
+			// The text is the last part of the button after the text
+			const textNode = button.lastChild;
+		});
+	}
 });
