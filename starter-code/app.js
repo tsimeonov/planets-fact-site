@@ -194,4 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		});
 	}
+
+	// 5. Listen for changes in screen size
+	mediaQuerry.addEventListener('change', updateButtonText);
 });
