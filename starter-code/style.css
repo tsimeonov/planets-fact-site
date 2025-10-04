@@ -497,6 +497,14 @@ nav ul li a::before {
 }
 
 @media screen and (max-width: 790px) {
+	.container {
+		grid-template-areas:
+			'header header header'
+			'info info info'
+			'image image image'
+			'extra-info extra-info extra-info';
+	}
+
 	.header {
 		padding: 18px 24px;
 	}
