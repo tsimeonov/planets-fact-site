@@ -184,6 +184,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		infoButtons.forEach((button, index) => {
 			// The text is the last part of the button after the text
 			const textNode = button.lastChild;
+
+			if (isMobileView) {
+				// Use the short text on small screens
+				textNode.textContent = `${shortTexts[index]}`;
+			} else {
+				// Use the long text in large screens
+				textNode.textContent = `${longTexts[index]}`;
+			}
 		});
 	}
 });
