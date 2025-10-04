@@ -531,4 +531,8 @@ nav ul li a::before {
 	nav ul {
 		display: none;
 	}
+
+	.info {
+		flex-direction: column-reverse;
+	}
 }
