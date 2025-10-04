@@ -535,4 +535,14 @@ nav ul li a::before {
 	.info {
 		flex-direction: column-reverse;
 	}
+
+	.info-buttons {
+		flex-direction: row;
+	}
+
+	.info-buttons > button {
+		width: 190px;
+		/* display: block; */
+		border: none;
+	}
 }
